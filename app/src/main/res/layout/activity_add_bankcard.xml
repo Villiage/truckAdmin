@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="请绑定本人的银行卡" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:padding="15dp"
+            android:text="持卡人"
+            android:textColor="@color/text_mark" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="15dp"
+            android:textColor="@color/text_mark" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_line" />
+    <LinearLayout
+        android:id="@+id/banks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:padding="15dp"
+            android:text="银行"
+            android:textColor="@color/text_mark" />
+
+        <TextView
+            android:id="@+id/bankname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:hint="如： 招商银行"
+            android:textColor="@color/text_mark" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jt_blue" />
+    </LinearLayout>
+
+
+    <include layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:padding="15dp"
+            android:text="开户行"
+            android:textColor="@color/text_mark" />
+
+        <EditText
+            android:id="@+id/openbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:hint="如：太原招商银行体育路支行"
+            android:textColor="@color/text_mark" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:padding="15dp"
+            android:text="卡号"
+            android:textColor="@color/text_mark" />
+
+        <EditText
+            android:id="@+id/cardno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberSigned"
+            android:background="@null"
+            android:padding="15dp"
+            android:textColor="@color/text_mark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_gradient"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/action_button" />
+</LinearLayout>

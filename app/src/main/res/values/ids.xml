@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dialog_album" type="id"></item>
+    <item name="dialog_capture" type="id"></item>
+    <item name="dialog_item1" type="id"></item>
+    <item name="dialog_item2" type="id"></item>
+    <item name="dialog_item3" type="id"></item>
+    <item name="dialog_close" type="id"></item>
+    <item name="dialog_ok" type="id"></item>
+    <item name="del" type="id"></item>
+</resources>

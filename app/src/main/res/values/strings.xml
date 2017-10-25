@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">车队版</string>
+    <string name="getsms"><u>获取验证码</u></string>
+    <string name="query">查询</string>
+</resources>
